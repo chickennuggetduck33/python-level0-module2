@@ -13,7 +13,20 @@ def animals():
 
     # TODO 1. Ask the user which animal they want, then see and
     #  hear the animal they chose using one of the methods below.
-
+    while True:
+        animal = simpledialog.askstring(None, prompt="choose an animal")
+        if animal == "cat":
+            meow()
+        elif animal == "cow":
+            moo()
+        elif animal == "duck":
+            quack()
+        elif animal == "llama":
+            llama_scream()
+        elif animal == "dog":
+            woof()
+        elif animal == "exit":
+            break
     # TODO 2. Make it so that the user can keep entering new animals.
 
     # TODO 3. If the user enters 'exit', stop the program

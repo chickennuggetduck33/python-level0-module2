@@ -34,4 +34,6 @@ def draw():
     # TODO: Add some other shapes with different sizes and colors
     # rect(x, y, width, height)
     # triangle(x1, y1, x2, y2, x3, y3)
-    
+    if mousePressed:
+        fill('#AA3A39')
+        rect(mouseX - 25, mouseY - 25, 50, 50)
